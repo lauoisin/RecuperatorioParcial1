@@ -1,4 +1,4 @@
-# Listas precargadas
+# Listas 
 productos = ["leche", "arvejas", "pan", "agua"]
 cantidades = [2, 6, 9, 0]
 
@@ -11,7 +11,7 @@ def mostrar_menu():
     print("4. Ver todos los productos")
     print("5. Salir")
 
-# Función para agregar un producto nuevo
+# Agregar un producto nuevo
 def agregar_producto(productos, cantidades):
     nombre = input("Ingrese el nombre del producto: ").strip()
     if nombre in productos:
@@ -68,7 +68,7 @@ def ver_todos_los_productos(productos, cantidades):
     for i in range(len(productos)):
         print(f"- {productos[i]}: {cantidades[i]} unidades")
 
-# Programa principal con menú sin usar 'break'
+
 opcion = ""
 while opcion != "5":
     mostrar_menu()
